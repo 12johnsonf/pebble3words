@@ -12,6 +12,10 @@ var main = new UI.Card({
   scrollable: true
 });
 
+var refresh = new UI.Card({
+  title: "Refreshing",
+  style: "large"
+});
 
 var lat;
 var long;
@@ -40,6 +44,7 @@ function locationSuccess(pos) {
     var data = JSON.parse(this.responseText);
     console.log(data.words);
     main.body("Your location:\n"+data.words+"\nPress select for refresh");
+    refresh.hide();
   };
   
   // Send the request
@@ -52,6 +57,7 @@ function locationError(err) {
 }
 
 function loadLocation(){
+  refresh.show();
   navigator.geolocation.getCurrentPosition(locationSuccess, locationError, locationOptions);
   console.log("location loaded");
 }
