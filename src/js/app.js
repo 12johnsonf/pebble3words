@@ -6,6 +6,8 @@
 
 var UI = require('ui');
 
+var apiKey = "";
+
 var main = new UI.Card({
   title: "pebble3words",
   style: "small",
@@ -31,7 +33,7 @@ function locationSuccess(pos) {
   lat = pos.coords.latitude;
   //lat = 25;
   long = pos.coords.longitude;
-  var w3wUrl = "https://api.what3words.com/v2/reverse?coords="+lat+"%2C"+long+"&key=KZR9Z8TC&display=minimal";
+  var w3wUrl = "https://api.what3words.com/v2/reverse?coords="+lat+"%2C"+long+"&key="+apiKey+"&display=minimal";
   console.log(w3wUrl);
   
   var method = 'GET';
