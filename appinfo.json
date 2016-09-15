@@ -3,7 +3,7 @@
     "capabilities": [
         "location"
     ],
-    "companyName": "felix@codeantics.co.uk",
+    "companyName": "FelixJ20000",
     "longName": "Pebble3Words",
     "projectType": "pebblejs",
     "resources": {
@@ -35,11 +35,12 @@
     "shortName": "Pebble3Words",
     "targetPlatforms": [
         "aplite",
-        "basalt"
+        "basalt",
+        "chalk"
     ],
     "uuid": "25af2eaa-1c04-4972-a5cb-d39ba43f8fb1",
     "versionCode": 1,
-    "versionLabel": "1.0",
+    "versionLabel": "1.1",
     "watchapp": {
         "hiddenApp": false,
         "watchface": false
