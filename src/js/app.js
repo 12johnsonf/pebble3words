@@ -6,7 +6,7 @@
 
 var UI = require('ui');
 
-var apiKey = "KZR9Z8TC";
+var apiKey = "";
 
 var main = new UI.Card({
   title: "tiny3words",
